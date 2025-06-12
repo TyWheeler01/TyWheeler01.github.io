@@ -1,10 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ty Wheeler – CS 499 ePortfolio</title>
+  <style>
+    body {
+      background-image: url('images/background.png');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
 
-<header style="text-align: center; padding: 30px 20px 10px 20px; background-color: #f8f8f8; border-bottom: 2px solid #ccc;">
-  <h1 style="font-size: 36px; color: #2c3e50; margin-bottom: 8px;">Ty Wheeler – CS 499 ePortfolio</h1>
-</header>
+    nav {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 10px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-bottom: 2px solid #ccc;
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.90);
+      border-radius: 10px;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 960px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+
+    h2 {
+    font-size: 28px;
+  border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+    color: black;
+}
+
+
+    p, li {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: black;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      border-top: 2px solid #ccc;
+    }
+
+    footer a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#self-assessment">Self Assessment</a>
+    <a href="#code-review">Code Review</a>
+    <a href="#enhancement1">Artifact 1</a>
+    <a href="#enhancement2">Artifact 2</a>
+    <a href="#enhancement3">Artifact 3</a>
+  </nav>
+
+  <header>
+    <img src="images/selfportrait.png" alt="Ty Wheeler Portrait">
+    <h1>Ty Wheeler – CS 499 ePortfolio</h1>
+  </header>
+
+  <section id="self-assessment" style="margin: 60px auto; max-width: 960px; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 28px; color: #000000; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Professional Self Assessment</h2>
+  <p>The time I’ve spent in the Computer Science program at Southern New Hampshire University and developing this ePortfolio have been extremely valuable. My experience here has not only built up my technical skills, but also clarified my career aspirations. This capstone project put together everything I’ve learned in this program and presents it in a way that shows my readiness to enter the field as a well rounded software developer. Throughout the program I’ve become proficient in applying computer science fundamentals across many different scenarios. From designing robust software to implementing efficient algorithms. I’ve aimed to demonstrate my ability to produce well built, maintainable and scalable solutions in all of my projects. This ePortfolio showcases my collective work and explains the reasoning behind my design and enhancement decisions.</p>
+
+  <p>Learning how to collaborate in a team environment was a crucial skill I developed throughout this program. In courses like Software Development Lifecycles (CS 250) I worked on group projects that resembled how real world development team workflows operate. This included sprint planning, peer code reviews and iterative releases. These experiences not only strengthened my ability to contribute to team based efforts, but also taught me how to communicate ideas clearly, delegate tasks and resolve conflicts in a constructive manner. I learned to adapt my communication style to different audiences, peers and stakeholders in order to ensure that each group had the context they needed to make informed decisions. This reflects the course outcome of employing strategies to foster collaborative environments that support organizational decision making. In courses such as System Analysis and Design (CS 255) I learned to translate complex technical concepts into language that is easier for stakeholders to digest and how to gather meaningful feedback from users to make more informed decisions about the overall design of the software. This ensures that the software I create meets both the functional goals and meets the user's expectations.</p>
+
+  <p>I’ve also developed a solid foundation in algorithms and data structures which I’ve applied across many different projects that required technical problem solving. One example is my work in CS 370 where I implemented a reinforcement learning agent capable of navigating a grid based environment using Q-learning. This project helped me understand how algorithmic principles can be translated into practical, real world intelligent systems. I enhanced the agent by incorporating a Double Deep Q-Network (Double DQN) architecture which reduced overestimation bias and improved learning stability overall. This process required carefully examining the design trade offs, such as balancing learning speed against accuracy. These enhancements directly align with the course outcome of designing and evaluating computing solutions using algorithmic techniques while considering their real world impact.</p>
+
+  <p>In regard to software engineering and databases, I’ve designed full stack applications such as my Grazioso Salvare web app from CS 340. I followed industry standard architectural patterns like MVC and implemented secure RESTful APIs using Flask. Through this project I gained hands-on experience working with both SQL and NoSQL databases and deepened my awareness of security in designing applications. In my enhancements I introduced role based access control to restrict sensitive operations like data deletion only to admin users. I also decoupled the frontend from direct database access by routing all data interactions through an authenticated API layer. This mindset of anticipating potential vulnerabilities before they are exploited helped me identify issues in the original design and mitigate them by implementing authentication, isolating permissions, and ensuring data privacy through controlled access patterns. These decisions directly reflect a security first approach and demonstrate my ability to architect systems that proactively guard against adversarial threats while ensuring reliable and maintainable code. My understanding of software security deepened in CS 305 as well, as I developed a secure communications protocol for a financial web application using SHA-256 hashing to protect sensitive data. I also generated self signed certificates to enable HTTPS, verified checksums, and implemented secure client-server interactions.  I also gained valuable experience in CS 320 where I explored test automation practices and learned to analyze defects in both unit and system testing. This gave me a better appreciation for code quality and real-world production readiness. All of these experiences taught me to prioritize security in every layer of application development.</p>
+
+  <p>Each artifact in this ePortfolio was selected to demonstrate a different course outcome and showcase the skills I’ve developed throughout this program. My Goal Weight Tracker Android App highlights my ability to design user-centered mobile applications using architectural best practices like MVVM and integrate secure features such as two-factor authentication. This directly reflects my understanding of software engineering principles and the ability to implement professional technical solutions that are tailored to the user needs. My Treasure Hunt Agent demonstrates algorithmic thinking and data structure application as I designed and evaluated a reinforcement learning model. I enhanced this model with Double DQN and Q-value visualization implementations. This artifact aligns with the course outcome focused on solving problems using algorithmic principles while managing trade-offs in model complexity and stability. The Grazioso Salvare Web Application showcases my experience with full-stack development, API security and role based access control, demonstrating a strong security mindset and a proactive approach to mitigating vulnerabilities and safeguarding user data. Additionally, all of my projects required clear documentation, technical communication, and potential stakeholder considerations. This fulfills the outcome related to professional oral, written and visual communication throughout development of nearly all of my projects. My collaborative work in earlier courses and team based practices reflected throughout these enhancements display the outcome of building effective collaborative environments that support diverse decision making in the field of computer science. These artifacts all aim to showcase continual improvement, adaptability, and real world problem solving.</p>
+
+</section>
 
 <section id="code-review" style="margin: 60px auto; max-width: 960px; font-family: Arial, sans-serif;">
-  <h2 style="font-size: 28px; color: #2c3e50; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Code Review</h2>
+  <h2 style="font-size: 28px; color: #000000; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Code Review</h2>
 
   <p>In this code review I go over three major projects for enhancement that demonstrate profficiency in software design and engineering, algorithms and data structures, aswell as databases. Through all of these different projects I’ve identified weaknesses, proposed meaningful enhancements and aligned each improvement with the course outcomes.</p>
 
@@ -14,28 +125,28 @@
 </section>
 
 <section id="enhancement1" style="margin: 60px auto; max-width: 960px; font-family: Arial, sans-serif;">
-  <h2 style="font-size: 28px; color: #2c3e50; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Enhancement 1: Goal Weight Tracker App</h2>
+  <h2 style="font-size: 28px; color: #000000; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Artifact 1: Goal Weight Tracker App</h2>
 
-  <p><strong>Artifact 1:</strong> CS 360 – Mobile Architecture and Programming</p>
   <p><strong>Category:</strong> Software design and engineering</p>
+  <p><a href="narratives/narrative1.docx" target="_blank">Narrative for Artifact 1</a></p>
 
-  <p style="margin-top: 20px;"> This Android application allows users to log their weight, set goal weights, and receive notifications according the the milestones and goals they set. The original version of the app, built in Java using SQLite, lacked modern architecture, secure logins, and visual clarity. This enhanced version addresses these issues through a few significant updates. </p>
+  <p style="margin-top: 20px;"> This Android application allows users to log their weight, set goal weights and receive notifications according the the milestones and goals they set. The original version of the app, built in Java using SQLite, lacked modern architecture, secure logins, and visual clarity. This enhanced version addresses these issues through a few significant updates. </p>
 
-  <h3 style="margin-top: 30px; color: #1f4e79;">Enhancements completed:</h3>
+  <h3 style="margin-top: 30px; color: #000000;">Enhancements completed:</h3>
   <ul style="line-height: 1.6;">
-    <li>Implemented Firebase Authentication with email verification and simulated two-factor authentication (2FA).</li>
+    <li>Implemented Firebase Authentication with email verification and two-factor authentication.</li>
     <li>Refactored app architecture using MVVM (Model-View-ViewModel) pattern.</li>
     <li>Redesigned the user interface using Material Design components.</li>
     <li>Validated weight and date inputs using regex and SimpleDateFormat.</li>
     <li>Added back button navigation with consistent behavior across all screens.</li>
   </ul>
 
-<h3 style="margin-top: 30px; color: #1f4e79;">Before and After Screens</h3>
+<h3 style="margin-top: 30px; color: #000000;">Before and After</h3>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; justify-items: center;">
 
   <div>
-    <h4 style="text-align: center;">Login Screen</h4>
+    <h4 style="text-align: center;">Login screen</h4>
     <img src="images/activity_main_old.png" alt="Old Login"
          style="width: 100%; max-width: 260px; border: 1px solid #ccc; border-radius: 6px;">
     <img src="images/activity_main_new.png" alt="New Login"
@@ -43,7 +154,7 @@
   </div>
 
   <div>
-    <h4 style="text-align: center;">Log Entry Screen</h4>
+    <h4 style="text-align: center;">Log entry screen</h4>
     <img src="images/activity_log_old.png" alt="Old Log"
          style="width: 100%; max-width: 260px; border: 1px solid #ccc; border-radius: 6px;">
     <img src="images/activity_log_new.png" alt="New Log"
@@ -51,7 +162,7 @@
   </div>
 
   <div>
-    <h4 style="text-align: center;">Dashboard / Data</h4>
+    <h4 style="text-align: center;">Dashboard/Data</h4>
     <img src="images/activity_data_old.png" alt="Old Dashboard"
          style="width: 100%; max-width: 260px; border: 1px solid #ccc; border-radius: 6px;">
     <img src="images/activity_data_new.png" alt="New Dashboard"
@@ -59,7 +170,7 @@
   </div>
 
   <div>
-    <h4 style="text-align: center;">SMS Permission Screen</h4>
+    <h4 style="text-align: center;">SMS Permission screen</h4>
     <img src="images/activity_sms_old.png" alt="Old SMS"
          style="width: 100%; max-width: 260px; border: 1px solid #ccc; border-radius: 6px;">
     <img src="images/activity_sms_new.png" alt="New SMS"
@@ -71,3 +182,72 @@
     <a href="https://github.com/TyWheeler01/CS-360" target="_blank" style="color: #007acc;">View the enhanced project on GitHub here</a>
   </p>
 </section>
+
+<section id="enhancement2" style="margin: 60px auto; max-width: 960px; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 28px; color: #000000; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Artifact 2: Treasure Hunt Agent</h2>
+
+  <p><strong>Category:</strong> Algorithms and data structures</p>
+  <p><a href="narratives/narrative2.docx" target="_blank">Narrative for Artifact 2</a></p>
+
+  <p style="margin-top: 20px;">This project involved creating a reinforcement learning agent for a treasure hunting game environment. The original version of the agent used basic Q-learning with limited learning stability. For this enhanced artifact I focused on improving the agent’s performance and visualizing its learning behavior.</p>
+
+  <h3 style="margin-top: 30px; color: #000000;">Enhancements completed:</h3>
+  <ul style="line-height: 1.6;">
+    <li>Implemented a Double DQN agent to reduce Q-value overestimation and improve overall training stability.</li>
+    <li>Introduced heatmap visualizations of Q-values and a line graph to better understand policy development during training.</li>
+    <li>Refactored the training loop for cleaner separation of logic and improved mpodularity.</li>
+
+    <div style="text-align: center; margin: 30px 0;">
+  <img src="images/visual.png" alt="Q-Value Heatmap Visualization" style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+</div>
+
+     <a href="https://github.com/TyWheeler01/CS-370/pull/1" target="_blank">View enhanced project on Github here</a>
+  </p>
+</section>
+
+<section id="enhancement3" style="margin: 60px auto; max-width: 960px; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 28px; color: #000000; border-bottom: 2px solid #ccc; padding-bottom: 8px;">Artifact 3: Grazioso Salvare Web Application</h2>
+
+  <p><strong>Category:</strong> Databases</p>
+  <p><a href="narratives/narrative3.docx" target="_blank">Narrative for Artifact 3</a></p>
+
+  <p style="margin-top: 20px;">The original Grazioso Salvare application was built as a full-stack web app to help a rescue organization manage a large database of dogs available. My enhancements focused on restructuring the backend to improve security, scalability, and maintainability of the database and application.</p>
+
+  <h3 style="margin-top: 30px; color: #000000;">Enhancements completed:</h3>
+  <ul style="line-height: 1.6;">
+    <li>Implemented a secure RESTful Flask API to handle the database interactions.</li>
+    <li>Added role based access control to ensure only admin users could perform certain operations such as deleting records.</li>
+    <li>Separated database logic from the UI by decoupling the Dash frontend from direct database calls.</li>
+    <li>Improved modularity and maintainability by organizing code into MVC style components.</li>
+  </ul>
+
+  <div style="text-align: center; margin: 20px 0;">
+  <img src="images/grazioso.jpg" alt="Grazioso Dashboard Screenshot" style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  </div>
+
+<h3 style="margin-top: 30px; color: #000000;">Admin role API tests</h3>
+<p>Below are screenshots of my Postman tests verifying authentication and role-based access for the Grazioso Salvare Flask API.</p>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <img src="images/admin1.jpg" alt="Postman Test 2" style="width: 100%; max-width: 450px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+    <p style="margin-top: 8px;">Successful admin login</p>
+  </div>
+  <div style="flex: 1; min-width: 300px; text-align: center;">
+    <img src="images/admin2.jpg" alt="PPostman Test 2" style="width: 100%; max-width: 450px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+    <p style="margin-top: 8px;">Successful Dogh record deletion from admin</p>
+  </div>
+</div>
+
+
+  <p>
+     <a href="https://github.com/TyWheeler01/CS-340" target="_blank" style="color: #007acc;">View enhanced project on Github here</a>
+  </p>
+</section>
+
+  <footer>
+    <p>Contact: <a href="mailto:tywheeler101@gmail.com">tywheeler101@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/TyWheeler01" target="_blank">github.com/TyWheeler01</a></p>
+  </footer>
+</body>
+</html>
